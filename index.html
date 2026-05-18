@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>朝闻道</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@300;400;500;700&family=Noto+Sans+SC:wght@300;400&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  :root {
+    --ink: #1a1814;
+    --ink-muted: #6b6760;
+    --ink-faint: #b5b2ac;
+    --paper: #f7f4ef;
+    --paper-dark: #e8e4dc;
+    --accent: #8b4513;
+    --accent-light: #c4713a;
+  }
+  body {
+    background: var(--paper);
+    color: var(--ink);
+    font-family: 'Noto Serif SC', serif;
+    min-height: 100vh;
+    line-height: 1.9;
+  }
+  header {
+    border-bottom: 1px solid var(--paper-dark);
+    padding: 3rem 0 2.5rem;
+    text-align: center;
+  }
+  .site-title {
+    font-size: clamp(2rem, 5vw, 3rem);
+    font-weight: 700;
+    letter-spacing: 0.2em;
+    color: var(--ink);
+    text-decoration: none;
+    display: inline-block;
+  }
+  .site-title span { color: var(--accent); }
+  .site-subtitle {
+    margin-top: 0.6rem;
+    font-size: 0.8rem;
+    font-family: 'Noto Sans SC', sans-serif;
+    font-weight: 300;
+    color: var(--ink-faint);
+    letter-spacing: 0.35em;
+  }
+  main {
+    max-width: 680px;
+    margin: 0 auto;
+    padding: 4rem 2rem 6rem;
+  }
+  .section-label {
+    font-size: 0.68rem;
+    font-family: 'Noto Sans SC', sans-serif;
+    font-weight: 400;
+    letter-spacing: 0.45em;
+    color: var(--ink-faint);
+    margin-bottom: 2.5rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+  .section-label::after {
+    content: '';
+    flex: 1;
+    height: 1px;
+    background: var(--paper-dark);
+  }
+  .article-list { list-style: none; }
+  .article-item {
+    border-bottom: 1px solid var(--paper-dark);
+    padding: 2.2rem 0;
+  }
+  .article-item:first-child { border-top: 1px solid var(--paper-dark); }
+  .article-link { text-decoration: none; color: inherit; display: block; }
+  .article-meta {
+    font-size: 0.7rem;
+    font-family: 'Noto Sans SC', sans-serif;
+    font-weight: 300;
+    color: var(--ink-faint);
+    letter-spacing: 0.2em;
+    margin-bottom: 0.6rem;
+  }
+  .article-title {
+    font-size: clamp(1.05rem, 3vw, 1.3rem);
+    font-weight: 500;
+    line-height: 1.55;
+    transition: color 0.2s ease;
+    margin-bottom: 0.8rem;
+  }
+  .article-link:hover .article-title { color: var(--accent); }
+  .article-excerpt {
+    font-size: 0.88rem;
+    color: var(--ink-muted);
+    line-height: 1.85;
+    font-weight: 300;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+  .read-more {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    margin-top: 1rem;
+    font-size: 0.72rem;
+    font-family: 'Noto Sans SC', sans-serif;
+    letter-spacing: 0.2em;
+    color: var(--accent-light);
+    transition: gap 0.2s ease;
+  }
+  .read-more::after { content: '→'; }
+  .article-link:hover .read-more { gap: 0.7rem; }
+  footer {
+    text-align: center;
+    padding: 2rem;
+    font-size: 0.7rem;
+    font-family: 'Noto Sans SC', sans-serif;
+    font-weight: 300;
+    color: var(--ink-faint);
+    letter-spacing: 0.2em;
+    border-top: 1px solid var(--paper-dark);
+  }
+</style>
+</head>
+<body>
+<header>
+  <a href="index.html" class="site-title"><span>朝</span>闻道</a>
+  <p class="site-subtitle">朝闻道，夕死可矣</p>
+</header>
+<main>
+  <p class="section-label">文章</p>
+  <ul class="article-list">
+
+    <li class="article-item">
+      <a href="puo-yu-li.html" class="article-link">
+        <p class="article-meta">2026年5月17日</p>
+        <h2 class="article-title">人生的"破"与"立"</h2>
+        <p class="article-excerpt">诸葛亮为什么变了？为什么年轻时那么散淡，老了老了不躺平退休，反倒开始发飙？这就是我想说的"破"与"立"——它们是人生的两个不同阶段。</p>
+        <span class="read-more">阅读全文</span>
+      </a>
+    </li>
+
+    <li class="article-item">
+      <a href="zhao-wen-dao.html" class="article-link">
+        <p class="article-meta">2026年5月11日</p>
+        <h2 class="article-title">很多人三十岁就已经死了，只是还没躺下</h2>
+        <p class="article-excerpt">真正的恐惧，不是死亡，而是"白活了"。这种感受，比死亡本身更难承受。因为死亡消灭的是肉体，而这种领悟消灭的是"我这一生"的意义。</p>
+        <span class="read-more">阅读全文</span>
+      </a>
+    </li>
+
+  </ul>
+</main>
+<footer>© 2026 朝闻道</footer>
+</body>
+</html>
